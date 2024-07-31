@@ -1,0 +1,124 @@
+.message-card {
+    position: relative;
+    word-wrap: break-word;
+    background-color: #bdbdbd29;
+    background-clip: border-box;
+    border-radius: 1.25rem;
+    max-width: 30%;
+    box-shadow: 1px 1px 3px #aaaaaa;
+    opacity: 1;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.current-user-card {
+    float: right !important;
+}
+.user-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #bdbdbd29;
+    background-clip: border-box;
+    max-width: 100%;
+    box-shadow: 1px 1px 3px #aaaaaa;
+    opacity: 1;
+    margin-bottom: 15px;
+}
+
+.card{
+    padding: 10px !important;
+    height: 534px !important;
+    max-height: 534px !important;
+    overflow: scroll;
+    overflow-x: unset;
+    width: 1200px;
+}
+
+.message-card-body {
+    padding: 0.7rem !important;
+    text-align: left;
+}
+
+.message-textbox {
+    display: flex;
+}
+.message-textbox input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: white;
+    padding-left: 10px;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+.message-button button {
+    padding: 12px 30px;
+    background-color: #8ace8d;
+    border-radius: unset;
+    box-shadow: 0px 0px 7px #aaaaaa;
+}
+.container-fluid{
+    /* background-image: url('/assets/images/bk.jpg'); */
+    padding: 50px 15px;
+    display: flex;
+}
+.p-chatt {
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+p{
+    margin-bottom: 5px;
+}
+.p-time {
+    text-align: right;
+    font-size: 12px;
+}
+.card-user{
+    padding: 5px !important;
+    height: 605px !important;
+    max-height: 585px !important;
+    overflow-y: unset;
+    overflow-x: unset;
+    width: 300px;
+    box-shadow: 0px 0px 2px #aaaaaa;
+}
+.i-tag {
+    padding-top: 6px;
+    color: #7de57d;
+    text-shadow: 1px 1px 1px #8c8b8b;
+}
+.user-card-body {
+    padding: 0.7rem !important;
+    text-align: left;
+    display: flex;
+}
+.user-icons {
+    text-align: right;
+    width: 100%;
+}
+.user-p {
+    width: 260%;
+}
+.message-card-admin {
+    position: relative;
+    word-wrap: break-word;
+    background-color: #bdbdbd14;
+    background-clip: border-box;
+    border-radius: 1.25rem;
+    max-width: 30%;
+    opacity: 1;
+    margin-bottom: 15px;
+    float: unset;
+    text-align: center;
+    margin-left: 350px;
+}
+.message-card-admin .admin-card-body p {
+    margin-bottom: 5px;
+    display: inline-flex;
+}
+.admin-card-body {
+    padding: 0.1rem !important;
+    font-family: monospace;
+    color: #726f6f;
+}

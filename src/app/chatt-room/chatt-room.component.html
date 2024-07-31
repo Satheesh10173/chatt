@@ -1,0 +1,29 @@
+<div style="text-align:center">
+  
+  <div class="container">
+    <div class="header-chatt">
+      <h4>Create Room</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="card chatt" style="max-width: 18rem;">
+          <div class="card-body">  
+            <div class="text-label">
+              <label>Group name</label>
+            <input type="text" [(ngModel)]="group.room" name="lname">
+            </div>
+            <div class="text-label">
+              <label>User name</label>
+              <input type="text" [(ngModel)]="group.name" name="lname"><br>
+            </div>
+            <button (click)="joinRoom(group)" class="btn">Create</button><br>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    
+  </div>
+        
+  </div>
+</div>

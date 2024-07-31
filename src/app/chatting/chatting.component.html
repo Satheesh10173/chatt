@@ -1,0 +1,58 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="container-fluid">
+    <div>
+    <p>Users</p>
+    <div class="card card-user">
+      <div class="user-card" *ngFor = "let user of userList">
+        <div class="user-card-body">
+          <p class="user-p">{{user.name}}</p>
+          <div class="user-icons">
+          <i class="fa fa-circle i-tag" aria-hidden="true"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div>
+      <p>New Group</p>
+    <div id="messageId" class="card">
+      <div *ngFor = "let chat of chatting">
+    <div *ngIf="(userDetails.name !== chat.name) && (chat.name !== 'Admin')" class="message-card">
+      <div class="message-card-body">
+        <p>{{chat.name}}</p>
+        <p class="p-chatt">{{chat.message}}</p>
+        <p class="p-time">{{chat.date}}</p>
+      </div>
+    </div>
+    <div *ngIf="userDetails.name === chat.name" class="message-card current-user-card">
+      <div class="message-card-body">
+        <p>{{chat.name}}</p>
+        <p class="p-chatt">{{chat.message}}</p>
+        <p class="p-time">{{chat.date}}</p>
+      </div>
+    </div>
+    <div *ngIf="(chat && chat.name === 'Admin') && (userDetails && userDetails.name !== chat.name)" class="message-card-admin">
+      <div class="admin-card-body">
+        <p>{{chat.name}}</p>
+        <p class="p-chatt">{{chat.message}}</p>
+        <!-- <p class="p-time">{{chat.date}}</p> -->
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <form>
+    <div class="message-textbox">
+      <input type="text" (click)="onclick()" placeholder="Start chatt here........" [(ngModel)]="value" name="lname">
+      <div class="message-button">
+        <button type="submit" (click)="sentMessage(value)" class="btn">send</button>
+      </div>
+    </div>  
+  </form>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
